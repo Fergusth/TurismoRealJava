@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="AppWebPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>Entity.ZonaTour</class>
+    <class>Entity.Acompaniante</class>
+    <class>Entity.ReservaServicio</class>
+    <class>Entity.Reparacion</class>
+    <class>Entity.Multa</class>
+    <class>Entity.ServicioExtra</class>
+    <class>Entity.Departamento</class>
+    <class>Entity.ReservaTransporte</class>
+    <class>Entity.Rol</class>
+    <class>Entity.Mantencion</class>
+    <class>Entity.Vehiculo</class>
+    <class>Entity.FotoDept</class>
+    <class>Entity.ServicioTours</class>
+    <class>Entity.Conductor</class>
+    <class>Entity.Inventario</class>
+    <class>Entity.ReservaTour</class>
+    <class>Entity.Transporte</class>
+    <class>Entity.Parametros</class>
+    <class>Entity.Checklist</class>
+    <class>Entity.Ciudad</class>
+    <class>Entity.Usuario</class>
+    <class>Entity.Reserva</class>
+    <class>Entity.ServicioTransporte</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@//localhost:1521/xe"/>
+      <property name="javax.persistence.jdbc.user" value="development"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password" value="asdasdasd"/>
+    </properties>
+  </persistence-unit>
+</persistence>
